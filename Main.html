@@ -401,10 +401,10 @@
                 var logoCBAS = document.getElementById('logocbas');
                 var textCBAS = document.getElementById('textcbas');
 
-                if (cbASValue === "0") {
+                if (cbASValue === 0) {
                     logoCBAS.src = "https://img.icons8.com/color/50/000000/sun.png"; // Logo Buổi sáng
                     textCBAS.textContent = "Buổi Sáng";
-                } else if (cbASValue === "1") {
+                } else if (cbASValue === 1) {
                     logoCBAS.src = "https://img.icons8.com/color/50/000000/moon.png"; // Logo Buổi tối
                     textCBAS.textContent = "Buổi Tối";
                 }
@@ -416,10 +416,10 @@
             var logoCBM = document.getElementById('logocbm');
             var textCBM = document.getElementById('textcbm');
 
-            if (cbMValue === "0") {
+            if (cbMValue === 0) {
                 logoCBM.src = "https://img.icons8.com/color/50/000000/rain.png"; // Logo Trời mưa
                 textCBM.textContent = "Trời Mưa";
-            } else if (cbMValue === "1") {
+            } else if (cbMValue === 1) {
                 logoCBM.src = "https://img.icons8.com/?size=100&id=19543&format=png&color=000000"; // Logo Trời trong
                 textCBM.textContent = "Trời Trong";
             }
@@ -429,9 +429,9 @@
             var cbmnValue = snapshot.val();
             var textCBMN = document.getElementById('textcbmn');
 
-            if (cbmnValue === "0") {
+            if (cbmnValue === 0) {
                 textCBMN.textContent = "Cao";
-            } else if (cbmnValue === "1") {
+            } else if (cbmnValue === 1) {
                 textCBMN.textContent = "Thấp";
             }
         });
